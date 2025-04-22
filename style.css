@@ -1,0 +1,174 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #0F172A;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #F1F5F9;
+    border-radius: 5px;
+}
+/* navbar */
+nav{
+    background-color: #0F172A;
+    position: static ; 
+    top: auto ; 
+    z-index: 100 ;
+}
+.items{
+    color: #F1F5F9;
+    margin: 10px;
+    text-decoration: none;
+    border: 1px solid #F1F5F9;
+    border-radius: 25px;
+    padding: 2px 15px;
+    background-color: transparent;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+
+}
+.items:hover{
+    background-color: #F1F5F9;
+    color: #0F172A;
+}
+/* toggler */
+.collapse-menu {
+    transition: all 0.3s ease-in-out;
+}
+
+.toggler-btn {
+    position: absolute;
+    right: 5px;
+    border: none;
+    background-color: none; 
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.toggler-btn:hover {
+    background-color: #1c1c1c; /* a bit lighter */
+}
+/* home section */
+#home , #skills, #about, #contact, #tools , #experience, #certifications{
+    background-color: #0F172A;
+    color: #F1F5F9;
+}
+
+#home{
+background: url('https://www.myneuro.ai/wp-content/uploads/2021/08/xray-blog-image-1536x1024.jpg') no-repeat center top;
+background-size: cover;
+background-attachment: fixed;
+}
+
+.highlighted-name {
+    background: linear-gradient(45deg, #00aaff, #94d0d7, #00d2ff); /* Gradient from teal to purple to light blue */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 2rem; /* Bigger size for better visibility */
+    text-shadow: 0 0 6px rgba(0, 170, 255, 0.2); /* Soft glowing effect */
+}
+
+.profile-img-wrapper {
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #00aaff, #f7f5fc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 0 15px #60c5f7;
+    position: relative;
+    z-index: 1;
+}
+
+.profile-img-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 20px;
+}
+
+
+.profile-img-wrapper:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(129, 183, 248, 0.85);
+}
+
+.qa-title {
+    font-family: 'Arial', sans-serif; 
+    font-weight: 600; 
+    letter-spacing: 2px;
+    position: relative;
+}
+/* contact section  */
+
+.contact-item{
+    border: 1px solid #F1F5F9;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+
+
+/* back to top button */
+.back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    background-color: #6390f1;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.back-to-top-btn:hover {
+    background-color: #63b6f1;
+}
+
+.back-to-top-btn:focus {
+    outline: none;
+}
+
+.back-to-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* footer */
+footer {
+    background-color: #222;
+    padding: 20px 0px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
