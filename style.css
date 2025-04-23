@@ -122,8 +122,30 @@ background-attachment: fixed;
     border-radius: 5px;
     margin: 5px;
 }
+/* skill section */
+
+.skill-box {
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-box:hover {
+    transform:  scale(1.02);
+    border: 1px solid #00aaff; 
+    background-color: rgba(0, 119, 179, 0.1);
+    box-shadow:
+    0 0 8px 2px rgba(0, 119, 179, 0.5),  /* darker blue */
+    0 15px 25px rgba(0, 119, 179, 0.15);
+}
 
 
+.skill-box i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.skill-box:hover i {
+    transform: scale(1.1);  /* Slightly scale the icon for emphasis */
+    color: #fafbfc !important;  /* Change icon color on hover */
+}
 
 /* back to top button */
 .back-to-top-btn {
