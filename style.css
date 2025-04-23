@@ -111,9 +111,17 @@ background-attachment: fixed;
 
 .qa-title {
     font-family: 'Arial', sans-serif; 
-    font-weight: 600; 
-    letter-spacing: 2px;
+    font-weight: 700; 
+    letter-spacing: 3px;
     position: relative;
+    transition: transform 0.4s ease, letter-spacing 0.4s ease;
+}
+
+
+.qa-title:hover {
+    color: #7be8ea;  
+    transform: scale(1.08);
+    letter-spacing: 5px; 
 }
 /* contact section  */
 
@@ -121,7 +129,29 @@ background-attachment: fixed;
     border: 1px solid #F1F5F9;
     border-radius: 5px;
     margin: 5px;
+    transition: background-color 0.3s ease,transform 0.4s ease-in-out ;
+
 }
+
+.phone-number{
+    letter-spacing: 0px;
+    transition: letter-spacing 0.4s ease-in-out ;
+}
+
+.phone-number:hover{
+    letter-spacing: 1px;
+}
+.contact-item a{
+    color: #f7f5fc;
+}
+.contact-item:hover{
+    color: #0F172A;
+    transform: scale(1.04);
+    background-color: #F1F5F9;
+}
+
+.contact-item a:hover{
+    color: #0F172A;}
 /* skill section */
 
 .skill-box {
@@ -146,6 +176,14 @@ background-attachment: fixed;
     transform: scale(1.1);  
     color: #fafbfc !important;  
 }
+/* education and certification section  */
+
+.edu-section{
+    transition:  transform 0.3s ease;
+}
+.edu-section:hover{
+    transform: translateY(-7px);
+}
 
 /* back to top button */
 .back-to-top-btn {
@@ -165,7 +203,7 @@ background-attachment: fixed;
 }
 
 .back-to-top-btn:hover {
-    background-color: #63b6f1;
+    background-color: #f9fafb;
 }
 
 .back-to-top-btn:focus {
