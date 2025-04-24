@@ -69,7 +69,7 @@ background-attachment: fixed;
 }
 
 .highlighted-name {
-    background: linear-gradient(45deg, #00aaff, #94d0d7, #00d2ff); /* Gradient from teal to purple to light blue */
+    background: linear-gradient(45deg, #00aaff, #94d0d7, #00d2ff); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
